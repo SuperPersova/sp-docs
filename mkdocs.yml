@@ -1,0 +1,51 @@
+site_name: SuperPersova Public Docs
+site_description: Public documentation index for SuperPersova repositories
+site_url: https://superpersova.github.io/sp-docs/
+repo_url: https://github.com/superpersova/sp-docs
+repo_name: superpersova/sp-docs
+
+theme:
+    name: material
+    language: en
+    features:
+        - navigation.tabs
+        - navigation.top
+        - navigation.footer
+        - content.code.copy
+        - search.suggest
+        - search.highlight
+
+plugins:
+    - search
+
+markdown_extensions:
+    - admonition
+    - attr_list
+    - md_in_html
+    - tables
+    - pymdownx.details
+    - pymdownx.superfences
+
+extra_css:
+    - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - APIs:
+      - Overview: apis/index.md
+  - Models:
+      - Overview: models/index.md
+  - Proctoring:
+      - Overview: proctoring/index.md
+      - App: proctoring/app/index.md
+      - E2E: proctoring/e2e/index.md
+      - Native: proctoring/native/index.md
+      - SDK: proctoring/sdk/index.md
+  - Extension:
+      - Overview: extension/index.md
+  - Web:
+      - Overview: web/index.md
+  - Packages and Artifacts:
+      - Overview: packages-artifacts/index.md
+      - sp-packages: packages-artifacts/sp-packages/index.md
+      - sp_web_space packages: packages-artifacts/sp-web-packages/index.md
